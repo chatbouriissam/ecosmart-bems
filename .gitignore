@@ -8,6 +8,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
+demo_export_*.json
+test_export*.json
 
 # C extensions
 *.so

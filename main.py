@@ -407,6 +407,9 @@ Examples:
     
     args = parser.parse_args()
     
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    
     # Configure logging
     logger.remove()  # Remove default handler
     logger.add(

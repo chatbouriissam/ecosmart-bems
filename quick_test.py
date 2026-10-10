@@ -5,6 +5,9 @@ Simple test without external dependencies to verify core structure.
 import sys
 from pathlib import Path
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 def test_imports():
     """Test if our modules can be imported properly."""
     print("🧪 Testing SBEMS Module Structure")
